@@ -1,16 +1,11 @@
 <?php
-include('index.php'); // Include database connection
-
-$ItemName = $_POST['ItemName'];
-$Price = $_POST['Price'];
+    include('index.php');
+    $ItemName = $_POST['ItemName'];
+    $Price = $_POST['Price'];
 
 // Insert data (ItemID is auto-generated)
-$sql = "INSERT INTO Item (ItemName, Price) 
-        VALUES ('$ItemName','$Price')";
-
-if (mysqli_query($database, $sql)) {
+    mysqli_query($database,"INSERT INTO Item (ItemName, Price) 
+            VALUES ('$ItemName','$Price')");
     header('Location: index.php'); // Redirect back to the main page
-} else {
-    echo "Error: " . mysqli_error($databse);
-}
+
 ?>
