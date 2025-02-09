@@ -1,5 +1,5 @@
 <?php
-include('database.php'); // Include database connection
+include('index.php'); // Include database connection
 
 $ItemName = $_POST['ItemName'];
 $Price = $_POST['Price'];
