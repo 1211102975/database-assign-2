@@ -1,4 +1,10 @@
+<?php
+include('database.php'); // Include database connection
 
+// Fetch all items from the database
+$sql = "SELECT * FROM Item";
+$result = mysqli_query($database, $sql);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
