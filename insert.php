@@ -1,5 +1,5 @@
 <?php
-    include('index.php');
+    include('database.php');
     $ItemName = $_POST['ItemName'];
     $Price = $_POST['Price'];
 
